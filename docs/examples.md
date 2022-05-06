@@ -65,7 +65,7 @@ export default defineComponent({
 
 ```vue
 <template>
-  <Carousel :items-to-show="2.5" :wrap-around="true">
+  <Carousel :items-to-show="2.5" :wrap-around="false" :itemsToScroll="2">
     <Slide v-for="slide in 10" :key="slide">
       <div class="carousel__item">{{ slide }}</div>
     </Slide>
